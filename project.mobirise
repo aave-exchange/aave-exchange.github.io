@@ -1,0 +1,160 @@
+{
+  "settings": {
+    "name": "Aave Exchange",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#1b2030"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/aave_1.png",
+    "mbrsiteDomain": "pli7sfsrsw",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Aave - Open Source Liquidity Protocol.",
+        "meta_descr": "Aave is an Open Source Protocol to create Non-Custodial ✔ Liquidity Markets to earn interest on supplying and borrowing with a variable or stable interest rate.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#1b2030\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/aave.png\" alt=\"aave exchange\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tcMrSYMUa4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image3-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#1b2030\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Aave Exchange Official</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">After months of work, it’s time for <a href=\"https://aave-exchange.github.io/\" class=\"text-primary\">Aave</a> to leave phase 1 and announce a new version of the Aave Protocol. As expected, Aave V2 will continue to push the limits of what is possible with Decentralized Finance.&nbsp;What started as the underdog of DeFi, Aave, the money market protocol grew to be a 1 billion market size with innovations such as flash loans, stable rates, the Aave tokens ever-growing balance model, and recently Credit Delegation, amongst others.\n<br><br>During Phase 1, 19 assets were listed on the Aave Market allowing multiple communities to access DeFi services. The Uniswap Market was the first of many upcoming innovative markets bringing new kinds of collateral into DeFi.\n<br>\n<br> \n<br>\n<br><b>Finance Sans Frontières:\n</b><br>A tale of user experience\n<br>The goal of <a href=\"https://aave-exchange.github.io/\" class=\"text-primary\"><b>Aave</b></a> as a protocol is to bring decentralized finance to the masses. One of the great barriers to adoption is currently without a doubt, the extremely high gas prices, making it impossible to use for small amounts. Besides gas cost, having to interact with multiple protocols to perform certain functions adds further friction to the user experience. Aave V2 will be ready to onboard a new set of users and improve the lives of our existing users :\n<br>\n<br>Repay with collateral\n<br>Today if a user wants to repay with part of their collateral, they will first need to withdraw the collateral, use it to buy the asset borrowed, then finally repay the debt and unlock all the deposited collateral. This operation costs time and requires at best 4 separate transactions on several protocols. With this new function, Aavengers will be able to deleverage or close their positions by paying directly with the collateral in 1 transaction.\n<br>\n<br>Debt tokenization and native credit delegation\n<br>Debt positions of users will be tokenized (users will receive tokens representing their debt). The tokenization of debt enables native credit delegation within the Aave Protocol. Besides the credit delegation functionalities already seen with the Aave Credit Delegation Vaults, it allows to implement cool features like native position management from cold wallets and user-specific yield farming strategies.\n<br>\n<br>Fixed Rate Deposit\n<br>Predictable interest rates for deposits allowing a clear guarantee of income for liquidity providers not bound by market variations.\n<br>\n<br>Improved Stable Borrow Rate\n<br>To further ensure interest rate predictability, borrowers would be able to use an improved version of Stable Borrow Rate, where they can lock down their borrow interest rate to a certain time period ensuring predictability of their costs of finance.\n<br>\n<br>Private Markets\n<br>In order to suit the needs of institutions, the Aave Protocol will now allow the governance to open private markets to support tokenized assets of all kinds. A collaboration between RealT and the Aave Protocol is in the works to push DeFi even further and bring mortgages on Ethereum. Expect more on this soon.\n<br>\n<br>Improved aTokens\n<br>ATokens V2 integrates the EIP 2612 for gasless approvals. The short term objective is to push on the aToken adoption, and Aave is actively researching on bringing them to L2.\n<br>\n<br>Gas Optimizations\n<br>Thanks to a lot of work from the Aavegineers, significant Gas Optimisations have been introduced, leading to a sharp drop in the transaction cost of most of the protocol interactions. Here is a sneak peek comparison between Aave V1 and the current Aave V2 prototype:\n<br><br>  <a href=\"https://aave-exchange.github.io/\" class=\"text-primary\">Aave Exchange</a> V2 cost in gas (top) compared to Aave V1 (bottom)\n<br>\n<br>Aave V2 also implements native GasToken Support, to further help users reduce their transaction costs.\n<br>\n<br> \n<br>\n<br>Security\n<br>Aave V2 builds on the great foundation of the security of Aave V1.\n<br>\n<br>The internal design has been simplified and the architecture improved to be more formal verification friendly. Aave is working closely with Certora, the leader in automatic verification technologies, and Consensys Diligence along with other top auditors to bring the highest security standards to the protocol and its users.\n<br>\n<br> \n<br>\n<br>Native Trading Functionalities\n<br>Debt Trading\n<br>As a DeFi user, fluctuating interest rates are difficult to manage, The <a href=\"https://aave-exchange.github.io/\" class=\"text-primary\">Aave Exchange</a> Protocol V2 will introduce the ability for anyone to natively trade their debt position from an asset to another. You could for example borrow Dai and change your debt position to USDC as soon as USDC becomes cheaper to borrow, all of this within one single transaction.\n<br>\n<br>Debt Trading opens up interest rate optimization, yield optimization strategies, and much more as the possibilities are endless.\n<br>\n<br>Collateral Trading\n<br>Users can trade with their deposited assets across all the currencies supported in Aave, even when they are being used as collateral.\n<br>\n<br>Margin Trading\n<br>With Margin Borrowing, users can now directly take long and short leveraged positions on any of the assets supported without using third-party services.\n<br>\n<br>On the flip side, with Margin Lending, liquidity providers are now able to increase the weight of their deposits to take opportunities.\n<br>\n<br> \n<br>\n<br>Governance\n<br>The Aave community is the center of gravity for the Aave Protocol. V2 introduces specific Governance features.\n<br>\n<br>Vote Delegation\n<br>Any AAVE holder will be able to safely delegate their voting weight to any other address. Protocol Politicians can be expected to emerge as a result to represent their peers. Unlike most representative democracies, Vote Delegation is a liquid democracy, and a delegation can be instantly removed at the user’s discretion in a single transaction.\n<br>\n<br><b>Cold Wallet Voting:\n</b><br>One of the pain points of decentralized governance is the need to move tokens from one place to another to participate in governance, this introduces security issues and user experience friction. User will now be able to sign messages from their cold wallet to participate in the Aave Governance\n<br>\n<br>Distribution of Governance power to users\n<br>V2 will be the start of what is commonly referred as “Liquidity Mining” for the users of the Aave Protocol.\n<br>Join the governance forum now to discuss the incentive distribution coming with v2.\n<br>\n<br>The experience and feedback collected during the 8 months since launch have been invaluable. Aave V2 represents the convergence of this, with massive improvements over Aave V1 and traditional lending protocols.\n<br>\n<br>As the Money Market Protocol, Aave is establishing itself as the middleware of finance; for the Aave Fam building innovation on top of the Aave Protocol, the v2 will represent a new era where integrators can be further incentivized and participate in its governance. The new tools and features of Aave V2 empower both brand new services and decentralized applications to be built and improved to push the limits of Decentralized Finance and beyond.\n<br>\n<br>The immediate next steps are already allowed by the protocol governance, currently available on testnet. To participate, join us on Discord, follow our updates on Twitter, and express your voice in the Governance Forum!</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tcMrTNKPW4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header2-1"
+        }
+      ]
+    }
+  }
+}
